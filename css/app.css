@@ -1,0 +1,129 @@
+:root {
+  --white: #ffffff;
+  --soft--white: #c9c8c8;
+  --dark: #3a3f47;
+  --black: #0f1011;
+  --yellow: #ecab0f;
+  --sm: 1.4rem;
+  --font-family-title: "Roboto", sans-serif;
+  --font-family-text: "Quicksand", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--dark);
+}
+
+.header-select {
+  color: var(--white);
+  border-radius: 8px;
+  font-size: var(--sm);
+  border: 1px solid var(--dark);
+  outline: none;
+}
+
+.header-title {
+  color: var(--yellow);
+  text-align: center;
+  font-family: var(--font-family-title);
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+.header-container h3{
+  margin-left: 10px;
+  margin-bottom: 15px;
+  color: var(--soft--white);
+  font-family: var(--font-family-text);
+}
+
+.header-title--categoryView {
+  text-align: left;
+}
+
+.header-searchForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+
+.header-searchForm input {
+  margin-left: 10px;
+  padding-left: 40px;
+  height: 35px;
+  width: 80%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  outline: none;
+
+  background-color: var(--soft--white);
+  background-image: url(../icon/search.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+
+  margin-bottom: 10px;
+}
+
+.header-searchForm button {
+  margin-right: 10px;
+  margin-left: 2px;
+  width: 80px;
+  height: 35px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--yellow);
+  border: 1px solid var(--black);
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+}
+
+.trendingPreview-header{
+  display: flex;
+}
+
+.trendingPreview-title{
+  margin: 10px;
+  color: var(--yellow);
+  font-family: var(--font-family-title);
+}
+
+.trendingPreview-movieList {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 241px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+} 
+
+.trendingPreview-movieList .movie-container {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.trendingPreview-movieList .movie-container .movie-img {
+  height: 225px;
+  min-height: 225px;
+  max-height: 225px;
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+} 
+
+.movie-img {
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px 0 var(--yellow);
+}
+

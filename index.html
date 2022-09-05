@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Ejemplo de consumo de una API de películas" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="Maylin Marin Galeano" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&amp;family=Roboto:wght@100;300;400&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/app.css">
+  <script src="./src/secrets.js"></script>
+  <script src="./src/main.js"></script>
+
+  <title>Time Movies</title>
+</head>
+
+<body>
+  <header id="header" class="header-container">
+    <!-- <span class="header-arrow inactive">&lt;</span> -->
+    <h1 class="header-title">Time Movies</h1>
+    <h3>Find your favorites movies</h3>
+
+    <!-- <h3 class="header-title header-title--categoryView inactive">Action</h3> -->
+
+    <form id="serchForm" class="header-searchForm">
+      <span class="header-searchIcon"></span>
+      <input type="text" placeholder="Search movie, series, ...">
+      <button>Search</button>
+    </form>
+
+    <!-- <div class="header-lang">
+      <select class="header-select" name="lang" id="langId">
+        <option value="es">Spanish</option>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="it">Italian</option>
+        <option value="pt">Portuguese</option>
+        <option value="ru">Russian</option>
+      </select>
+      <h1 class="header__title header__title--bold-500 header__title--color">
+        Time Movies
+      </h1>
+    </div> -->
+  </header>
+
+  <main>
+    <section id="trendingPreview" class="trendingPreview-container">
+      <div class="trendingPreview-header">
+        <h2 class="trendingPreview-title">Treding</h2>
+        <!-- <button class="trendingPreview-btn">Ver más</button> -->
+      </div>
+
+      <article class="trendingPreview-movieList">
+        <div class="movie-container">
+          <!-- <img class="movie-img" src="" alt=""> -->
+        </div>
+      </article>
+    </section>
+
+    <section id="categoriesPreview" class="categoriesPreview-container">
+      <h2 class="category-container"></h2>
+
+      <article class="categoriesPreview-list">
+        <div class="category-container">
+          <h3 class="category-title">Aqui van las categorias</h3>
+        </div>
+      </article>
+    </section>
+
+    <section id="genericList" class="genericList-container inactive">
+      <div class="movie-container">
+        <img src="" alt="">
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>
