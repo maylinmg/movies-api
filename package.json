@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/maylinmg/movies-api/issues"
   },
-  "homepage": "https://github.com/maylinmg/movies-api#readme",
-  "dependencies": {
-    "axios": "^0.27.2"
-  }
+  "homepage": "https://github.com/maylinmg/movies-api#readme" 
 }

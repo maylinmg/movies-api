@@ -1,11 +1,11 @@
 :root {
   --white: #ffffff;
   --soft--white: #c9c8c8;
-  --dark: #3a3f47;
+  --dark: rgb(1, 11, 29);
   --black: #0f1011;
   --yellow: #ecaa0f;
   --sm: 1.4rem;
-  --font-family-title: "Roboto", sans-serif;
+  --font-family-title: 'Pacifico', cursive;
   --font-family-text: "Quicksand", sans-serif;
 }
 
@@ -86,7 +86,7 @@ body {
   overflow-y: hidden;
   white-space: nowrap;
   height: 260px;
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 10px 10px;  
 }
 
 .movie-container {
@@ -125,20 +125,16 @@ body {
 .categoriesPreview-title {
   color: var(--yellow);
   font-family: var(--font-family-title);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.categoriesPreview-list,
-.categories-list {
+.categoriesPreview-list{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
+  place-items: center;
+  gap: 10px;
 }
 
-.category-container {
-  width: 45%;
-  align-items: center;
-}
 
 .category-title{
   color: var(--soft--white);
